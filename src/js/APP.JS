@@ -67,8 +67,14 @@ addPage.addEventListener("submit", function(e){
     addTugas();
 })
 
-const clear = document.getElementById("clear")
-clear.onclick = function(){
+const clearDekstop = document.getElementById("clearDekstop")
+clearDekstop.onclick = function(){
+    tugas = [];
+    localStorage.removeItem("save")
+    updateTugas();
+}
+const clearMobile = document.getElementById("clearMobile")
+clearMobile.onclick = function(){
     tugas = [];
     localStorage.removeItem("save")
     updateTugas();
