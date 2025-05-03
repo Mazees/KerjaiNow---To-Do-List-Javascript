@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+    --color-navy: #00004E;
+    --color-dark-navy: #000027;
+  }
+
+  @layer utilities {
+    .scrollbar-hidden {
+      scrollbar-width: none; /* Firefox */
+    }
+  
+    .scrollbar-hidden::-webkit-scrollbar {
+      display: none; /* Chrome, Safari, Edge */
+    }
+  }
+  

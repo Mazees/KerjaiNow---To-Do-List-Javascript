@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KerjaiNow - To Do List App</title>
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44da0ca706.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-navy flex justify-center items-center w-screen h-screen">
+    <div class="flex-col flex h-full w-full sm:w-[300px] sm:h-[500px] bg-dark-navy p-5 rounded-lg overflow-hidden">
+        <h1 class="text-white poppins-medium text-2xl w-full flex justify-center items-center">Kerjai<span class="text-sky-400">Now</span></h1>
+        <div id="progressPage" class="w-full mt-5 flex gap-3">
+            <h1 id="countDone" class="h-[70px] w-[70px] flex items-center justify-center bg-sky-400 rounded-full text-white poppins-bold">0/0</h1>
+            <div class="flex justify-center flex-col flex-1 gap-2">
+                <h1 class="text-white poppins-light">Your Progress:</h1>
+                <span id="barDone" class="w-full h-2 bg-white rounded-4xl"></span>
+            </div>
+        </div>
+        <form action="" id="addPage" class="w-full bg-white flex mt-5 rounded-xl overflow-hidden">
+            <input required id="inputTugas" type="text" class="my-2 ml-2 placeholder:text-dark-navy placeholder:font-[Poppins] placeholder:font-[300] placeholder:text-[12px] text-[12px] poppins-light border-none focus:outline-none flex-1" placeholder="Write your activity here">
+            <button type="submit" class="text-[12px] bg-sky-400 w-1/5 rounded-l-xl poppins-bold text-dark-navy hover:bg-sky-400/75 hover:cursor-pointer">ADD</button>
+        </form>
+        <ul id="listPage" class="w-full overflow-y-auto flex-1 scrollbar-hidden px-2 py-4 flex flex-col gap-4">
+        </ul>
+        <button id="clear" class="text-[12px] bg-sky-400 p-2 flex gap-2 justify-center items-center poppins-medium rounded-3xl text-dark-navy hover:brightness-110 cursor-pointer"><i class="fa-solid fa-trash"></i>BERSIHKAN TUGAS</button>
+    </div>
+</body>
+<script src="./js/app.js"></script>
+</html>
