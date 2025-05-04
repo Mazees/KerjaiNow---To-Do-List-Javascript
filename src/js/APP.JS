@@ -24,6 +24,7 @@ const addTugas = ()=> {
         })
         localStorage.setItem("save", JSON.stringify(tugas))
         updateTugas()
+        inputTugas.value = "";
     } else {
         addPage.reportValidity()
     }
